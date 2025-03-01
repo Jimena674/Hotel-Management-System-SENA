@@ -6,7 +6,10 @@ const Home = () => {
     <>
       <Navbar />
       <main className="container">
-        <h1>Página de inicio</h1>
+        <h1>Página de Inicio</h1>
+        <p>
+          Bienvenido a nuestro hotel. Explora nuestras habitaciones y servicios.
+        </p>
       </main>
     </>
   );
