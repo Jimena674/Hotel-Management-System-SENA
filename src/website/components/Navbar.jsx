@@ -1,28 +1,24 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="container d-flex flex-column">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a href="../pages/index.html" className="navbar-brand">
-            <img
-              src="../assets/images/logo.jpeg"
-              alt="Logo del hotel Teshuva"
-              height={70}
-              width={70}
-            />
-          </a>
+          <Link className="navbar-brand" to="/">
+            <img src="" alt="Logo del hotel Teshuva" height={70} width={70} />
+          </Link>
           <div className="">
             <ul className="d-flex flex-row navbar-nav">
               <li className="nav-item">
-                <a href="../pages/signup.html">Registrarse</a>
+                <Link to="">Registrarse</Link>
               </li>
               <li className="nav-item border-start border-secondary ms-3">
-                <a href="../pages/login.html" className="ms-3">
+                <Link className="ms-3" to="">
                   Iniciar Sesión
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -44,24 +40,28 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="../pages/index.html">
-                  Inicio
-                </a>
+                <Link to="/" className="nav-link">
+                  {" "}
+                  Inicio{" "}
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Habitaciones
-                </a>
+                <Link to="" className="nav-link">
+                  {" "}
+                  Habitaciones{" "}
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Ofertas Especiales
-                </a>
+                <Link to="" className="nav-link">
+                  {" "}
+                  Ofertas Especiales{" "}
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Ubicación
-                </a>
+                <Link to="" className="nav-link">
+                  {" "}
+                  Ubicación{" "}
+                </Link>
               </li>
             </ul>
           </div>
