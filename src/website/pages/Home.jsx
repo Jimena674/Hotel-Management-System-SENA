@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import BookingForm from "../components/BookingForm";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <hr />
+      <BookingForm />
       <main className="container">
         <h1>Página de Inicio</h1>
         <p>
