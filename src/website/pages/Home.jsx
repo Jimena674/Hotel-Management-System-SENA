@@ -5,6 +5,7 @@ import BookingForm from "../components/BookingForm";
 import CardITPB from "../components/CardITPB";
 import TitleHome from "../components/TitleHome";
 import CardITB from "../components/CardITB";
+import CardHor from "../components/CardHor";
 
 const Home = () => {
   return (
@@ -88,6 +89,33 @@ const Home = () => {
         <hr />
         <TitleHome title="Ofertas Especiales" />
         <hr />
+        <section className="container p-0">
+          <div className="row gx-4">
+            <div className="col-6">
+              <CardHor
+                image="/public/images/hotel-freepik.jpg"
+                title="Reservar con Anticipación"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+              />
+            </div>
+            <div className="col-6">
+              <CardHor
+                image="/public/images/hotel-freepik.jpg"
+                title="Reservar con Anticipación"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+              />
+            </div>
+          </div>
+          <div className="row gx-4">
+            <div className="col-6">
+              <CardHor
+                image="/public/images/hotel-freepik.jpg"
+                title="Reservar con Anticipación"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. "
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <hr />
       <Footer />
