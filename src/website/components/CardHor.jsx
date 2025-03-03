@@ -11,7 +11,7 @@ const CardHor = ({ image, title, description }) => {
           <img
             src={image}
             alt={title}
-            className="img-fluid rounded-start card-img-horizontal"
+            className="img-fluid rounded-start card-img-horizontal rounded"
           />
         </div>
         <div className="col-md-8">
