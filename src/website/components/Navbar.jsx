@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -41,25 +41,43 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/" className="nav-link" style={{ cursor: "pointer" }}>
                   {" "}
                   Inicio{" "}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">
+                <Link
+                  to="habitaciones"
+                  className="nav-link"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   {" "}
                   Habitaciones{" "}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">
+                <Link
+                  to="ofertas"
+                  className="nav-link"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   {" "}
                   Ofertas Especiales{" "}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link">
+                <Link
+                  to="ubicacion"
+                  className="nav-link"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   {" "}
                   Ubicación{" "}
                 </Link>
