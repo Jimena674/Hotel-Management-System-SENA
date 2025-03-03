@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header>
       {/* Primera Franja: Logo + Login/Register */}
-      <nav className="container navbar navbar-expand-lg fixed-top py-2 w-100">
+      <nav className="container navbar navbar-expand-lg py-2 w-100">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           {/* Logo */}
           <Link className="navbar-brand" to="/">

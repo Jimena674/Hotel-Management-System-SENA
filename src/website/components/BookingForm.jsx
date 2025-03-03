@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import { CalendarMonth, Home } from "@mui/icons-material";
 
 const BookingForm = () => {
   return (
@@ -19,7 +20,7 @@ const BookingForm = () => {
           <div className="row">
             {/*Botón de check-in y check-out*/}
             <div className="col-auto">
-              <a href="#" className="btn btn-light px-2 py-0" role="button">
+              <Link to="" className="btn btn-light px-2 py-0" role="button">
                 <div className="d-flex flex-row">
                   {/*Check-in*/}
                   <div className="d-flex flex-column me-3">
@@ -47,7 +48,7 @@ const BookingForm = () => {
                   {/*Check-out*/}
                   <div className="d-flex flex-column border-start ps-3">
                     <div className="d-flex flex-row">
-                      <div className="d-flex flex-column me-3">
+                      <div className="d-flex flex-column me-3 justify-content-center">
                         <i
                           className="bi bi-calendar"
                           style={{ fontSize: "2rem" }}
@@ -56,7 +57,7 @@ const BookingForm = () => {
                       <div className="d-flex flex-column text-start">
                         <div className="row fw-bold">
                           <span>
-                            <small>Check-in</small>
+                            <small>Check-out</small>
                           </span>
                         </div>
                         <div className="row">
@@ -68,17 +69,14 @@ const BookingForm = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             {/*Habitaciones*/}
             <div className="col-auto">
-              <a href="#" className="btn btn-light px-2 py-0" role="button">
+              <Link to="" className="btn btn-light px-2 py-0" role="button">
                 <div className="d-flex flex-row">
-                  <div className="d-flex flex-column me-3">
-                    <i
-                      className="bi bi-calendar"
-                      style={{ fontSize: "2rem" }}
-                    />
+                  <div className="d-flex flex-column me-3 justify-content-center">
+                    <i class="fa-solid fa-bed" style={{ fontSize: "2rem" }}></i>
                   </div>
                   <div className="d-flex flex-column text-start">
                     <div className="row fw-bold">
@@ -93,17 +91,17 @@ const BookingForm = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             {/*Huespedes*/}
             <div className="col-auto">
-              <a href="#" className="btn btn-light px-2 py-0" role="button">
+              <Link to="" className="btn btn-light px-2 py-0" role="button">
                 <div className="d-flex flex-row">
-                  <div className="d-flex flex-column me-3">
+                  <div className="d-flex flex-column me-3 justify-content-center">
                     <i
-                      className="bi bi-calendar"
+                      class="fa-solid fa-person"
                       style={{ fontSize: "2rem" }}
-                    />
+                    ></i>
                   </div>
                   <div className="d-flex flex-column text-start">
                     <div className="row fw-bold">
@@ -118,7 +116,7 @@ const BookingForm = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             {/*Llamado a la acción*/}
             <div className="col-auto">
