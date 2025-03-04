@@ -10,20 +10,27 @@ const Navbar = () => {
         <div className="container-fluid d-flex justify-content-between align-items-center">
           {/* Logo */}
           <Link className="navbar-brand" to="/">
-            <img src="" alt="Logo del hotel Teshuva" height={70} width={70} />
+            <img
+              src="/images/logo-h-teshuva.png"
+              alt="Logo del hotel Teshuva"
+              height={80}
+              width={80}
+            />
           </Link>
           {/* Enlaces de Iniciar sesión y Registro */}
           <div className="">
-            <Link to="">Registrarse</Link>
+            <Link to="">
+              <span>Registrarse</span>
+            </Link>
 
             <Link className="ms-3" to="">
-              Iniciar Sesión
+              <span>Iniciar Sesión</span>
             </Link>
           </div>
         </div>
       </nav>
       {/* Segunda Franja: Menú de navegación */}
-      <nav className="container navbar navbar-expand-lg w-100 mt-5">
+      <nav className="container navbar navbar-expand-lg w-100">
         <div className="container-fluid">
           {/* Botón para móviles */}
           <button
@@ -42,8 +49,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link to="/" className="nav-link" style={{ cursor: "pointer" }}>
-                  {" "}
-                  Inicio{" "}
+                  <span>Inicio</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -54,8 +60,7 @@ const Navbar = () => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                 >
-                  {" "}
-                  Habitaciones{" "}
+                  <span>Habitaciones</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -66,8 +71,7 @@ const Navbar = () => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                 >
-                  {" "}
-                  Ofertas Especiales{" "}
+                  <span>Ofertas Especiales</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -78,8 +82,7 @@ const Navbar = () => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                 >
-                  {" "}
-                  Ubicación{" "}
+                  <span>Ubicación</span>
                 </Link>
               </li>
             </ul>

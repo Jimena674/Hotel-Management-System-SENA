@@ -1,0 +1,14 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+//default variable overrides
+$body-bg: #fff8f5;
+$font-body: "Lora", serif;
+
+p,
+span,
+Link {
+  font-family: $font-body;
+}
+
+@import "bootstrap/scss/bootstrap";
