@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -41,13 +41,62 @@ const Footer = () => {
             className="d-flex flex-column justify-content-start text-end"
             style={{ height: "200px" }}
           >
-            <Link to="">Inicio</Link>
-            <Link to="">Habitaciones</Link>
-            <Link to="">Ofertas Especiales</Link>
-            <Link to="">Ubicación</Link>
-            <Link to="">Consultar Reserva</Link>
-            <Link to="">Registrarse</Link>
-            <Link to="">Iniciar Sesión</Link>
+            <Link
+              to="inicio"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Inicio
+            </Link>
+            <Link
+              to="habitaciones"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Habitaciones
+            </Link>
+            <Link
+              to="ofertas"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Ofertas Especiales
+            </Link>
+            <Link
+              to="Ubicación"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Ubicación
+            </Link>
+            <Link
+              to=""
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Consultar Reserva
+            </Link>
+            <Link
+              to=""
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Registrarse
+            </Link>
+            <Link
+              to=""
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Iniciar Sesión
+            </Link>
           </div>
         </div>
       </div>

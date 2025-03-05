@@ -16,49 +16,50 @@ const Home = () => {
       <hr />
       <BookingForm />
       <main className="container mt-3">
-        <img
-          src="/images/hotel-standret.jpg"
-          className="img-fluid rounded mb-5"
-          alt="Foto del hotel Teshuva"
-          style={{ height: "600px", width: "100%", objectFit: "cover" }}
-        />
-        <hr />
-        <TitleHome title="Hotel Teshuva" />
-        <hr />
-        {/*Información general del hotel.*/}
-        <section className="container p-0 my-5">
-          <div className="row gx-4">
-            <div className="col">
-              <CardITPB
-                image="/images/foto-pasillos.jpeg"
-                title="Hotel Teshuvá"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
-              />
+        <Element name="inicio">
+          <img
+            src="/images/hotel-standret.jpg"
+            className="img-fluid rounded mb-5"
+            alt="Foto del hotel Teshuva"
+            style={{ height: "600px", width: "100%", objectFit: "cover" }}
+          />
+          <hr />
+          <TitleHome title="Hotel Teshuva" />
+          <hr />
+          {/*Información general del hotel.*/}
+          <section className="container p-0 my-5">
+            <div className="row gx-4">
+              <div className="col">
+                <CardITPB
+                  image="/images/foto-pasillos.jpeg"
+                  title="Hotel Teshuvá"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+                />
+              </div>
+              <div className="col">
+                <CardITPB
+                  image="/images/foto-patio.jpeg"
+                  title="Hotel Teshuvá"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+                />
+              </div>
+              <div className="col">
+                <CardITPB
+                  image="/images/ingreso-hab-1.jpeg"
+                  title="Hotel Teshuvá"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+                />
+              </div>
+              <div className="col">
+                <CardITPB
+                  image="/images/ingreso-hab-2.jpeg"
+                  title="Hotel Teshuvá"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
+                />
+              </div>
             </div>
-            <div className="col">
-              <CardITPB
-                image="/images/foto-patio.jpeg"
-                title="Hotel Teshuvá"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
-              />
-            </div>
-            <div className="col">
-              <CardITPB
-                image="/images/ingreso-hab-1.jpeg"
-                title="Hotel Teshuvá"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
-              />
-            </div>
-            <div className="col">
-              <CardITPB
-                image="/images/ingreso-hab-2.jpeg"
-                title="Hotel Teshuvá"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris."
-              />
-            </div>
-          </div>
-        </section>
-
+          </section>
+        </Element>
         <Element name="habitaciones">
           <hr />
           <TitleHome title="Habitaciones" />
