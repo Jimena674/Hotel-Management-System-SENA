@@ -75,7 +75,10 @@ const BookingForm = () => {
               <Link to="" className="btn btn-light px-2 py-0" role="button">
                 <div className="d-flex flex-row">
                   <div className="d-flex flex-column me-3 justify-content-center">
-                    <i class="fa-solid fa-bed" style={{ fontSize: "2rem" }}></i>
+                    <i
+                      class="bi bi-file-person"
+                      style={{ fontSize: "2rem" }}
+                    ></i>
                   </div>
                   <div className="d-flex flex-column text-start">
                     <div className="row fw-bold">
@@ -98,7 +101,7 @@ const BookingForm = () => {
                 <div className="d-flex flex-row">
                   <div className="d-flex flex-column me-3 justify-content-center">
                     <i
-                      class="fa-solid fa-person"
+                      class="bi bi-file-person-fill"
                       style={{ fontSize: "2rem" }}
                     ></i>
                   </div>

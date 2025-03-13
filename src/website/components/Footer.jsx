@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,19 +18,19 @@ const Footer = () => {
             </div>
             <div className="d-flex row justify-content-start">
               <div className="col-1">
-                <Link to="" className="text-decoration-none text-dark">
+                <RouterLink to="/" className="text-decoration-none text-dark">
                   <i className="bi bi-facebook" />
-                </Link>
+                </RouterLink>
               </div>
               <div className="col-1">
-                <Link to="" className="text-decoration-none text-dark">
+                <RouterLink to="/" className="text-decoration-none text-dark">
                   <i className="bi bi-instagram" />
-                </Link>
+                </RouterLink>
               </div>
               <div className="col-1">
-                <Link to="" className="text-decoration-none text-dark">
+                <RouterLink to="/" className="text-decoration-none text-dark">
                   <i className="bi bi-twitter" />
-                </Link>
+                </RouterLink>
               </div>
             </div>
             <div className="row">
@@ -41,13 +42,62 @@ const Footer = () => {
             className="d-flex flex-column justify-content-start text-end"
             style={{ height: "200px" }}
           >
-            <Link to="">Inicio</Link>
-            <Link to="">Habitaciones</Link>
-            <Link to="">Ofertas Especiales</Link>
-            <Link to="">Ubicación</Link>
-            <Link to="">Consultar Reserva</Link>
-            <Link to="">Registrarse</Link>
-            <Link to="">Iniciar Sesión</Link>
+            <ScrollLink
+              to="inicio"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Inicio
+            </ScrollLink>
+            <ScrollLink
+              to="habitaciones"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Habitaciones
+            </ScrollLink>
+            <ScrollLink
+              to="ofertas"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Ofertas Especiales
+            </ScrollLink>
+            <ScrollLink
+              to="ubicacion"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Ubicación
+            </ScrollLink>
+            <RouterLink
+              to="/"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Consultar Reserva
+            </RouterLink>
+            <RouterLink
+              to="/SignUp"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Registrarse
+            </RouterLink>
+            <RouterLink
+              to="/"
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              Iniciar Sesión
+            </RouterLink>
           </div>
         </div>
       </div>

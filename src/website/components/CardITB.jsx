@@ -22,7 +22,7 @@ const CardITB = ({ image, title }) => {
 };
 
 CardITB.defaultProps = {
-  image: "/public/images/hab-cama-doble-1.jpeg",
+  image: "/images/hab-cama-doble-1.jpeg",
   title: "Habitación",
 };
 

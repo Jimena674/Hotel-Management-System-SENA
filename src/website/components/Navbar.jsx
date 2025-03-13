@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,23 +10,23 @@ const Navbar = () => {
       <nav className="container navbar navbar-expand-lg py-2 w-100">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           {/* Logo */}
-          <Link className="navbar-brand" to="/">
+          <RouterLink className="navbar-brand" to="/">
             <img
               src="/images/logo-h-teshuva.png"
               alt="Logo del hotel Teshuva"
               height={80}
               width={80}
             />
-          </Link>
+          </RouterLink>
           {/* Enlaces de Iniciar sesión y Registro */}
           <div className="">
-            <Link to="">
+            <RouterLink to="/SignUp">
               <span>Registrarse</span>
-            </Link>
+            </RouterLink>
 
-            <Link className="ms-3" to="">
+            <RouterLink className="ms-3" to="/">
               <span>Iniciar Sesión</span>
-            </Link>
+            </RouterLink>
           </div>
         </div>
       </nav>
@@ -48,12 +49,18 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link" style={{ cursor: "pointer" }}>
+                <ScrollLink
+                  to="inicio"
+                  className="nav-link"
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                >
                   <span>Inicio</span>
-                </Link>
+                </ScrollLink>
               </li>
               <li className="nav-item">
-                <Link
+                <ScrollLink
                   to="habitaciones"
                   className="nav-link"
                   smooth={true}
@@ -61,10 +68,10 @@ const Navbar = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <span>Habitaciones</span>
-                </Link>
+                </ScrollLink>
               </li>
               <li className="nav-item">
-                <Link
+                <ScrollLink
                   to="ofertas"
                   className="nav-link"
                   smooth={true}
@@ -72,10 +79,10 @@ const Navbar = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <span>Ofertas Especiales</span>
-                </Link>
+                </ScrollLink>
               </li>
               <li className="nav-item">
-                <Link
+                <ScrollLink
                   to="ubicacion"
                   className="nav-link"
                   smooth={true}
@@ -83,7 +90,7 @@ const Navbar = () => {
                   style={{ cursor: "pointer" }}
                 >
                   <span>Ubicación</span>
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>

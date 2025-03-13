@@ -29,7 +29,7 @@ const CardHor = ({ image, title, description }) => {
 };
 
 CardHor.defaultProps = {
-  image: "/public/images/hotel-freepik.jpg",
+  image: "/images/hotel-freepik.jpg",
   title: "Título no disponible",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a volutpat leo, a laoreet eros. Nulla purus est, euismod ornare tempor vel, lacinia quis mauris.",
